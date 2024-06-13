@@ -21,15 +21,10 @@ To use these functions, you can import them into your Python script and call the
 
 # Your code here
 from PIL import Image
-
 import pytesseract
-
 import numpy as np
-
 from typing import Tuple, Union
-
 import math
-
 import cv2
 
 image = cv2.imread('image.jpg')
