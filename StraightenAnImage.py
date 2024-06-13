@@ -17,6 +17,8 @@ def rotate_w_proportinons(image: np.ndarray, angle: float, background: Union[int
     return cv2.warpAffine(image, rot_mat, (int(round(height)), int(round(width))), borderValue=background)
 
 # Calculate skew angle of an image
+# Code courtesy of Leo Ertuna for Becoming Human: Artificial Intelligence Magazine 
+## https://becominghuman.ai/how-to-automatically-deskew-straighten-a-text-image-using-opencv-a0c30aed83df
 def getSkewAngle(cvImage) -> float:
     # Prep image, copy, convert to gray scale, blur, and threshold
     newImage = cvImage.copy()
